@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENDEcrypt-Text</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+      <p class="title">Text</p>
+      <textarea class="text-input"></textarea>
+      <p class="key"><label>Secret Key: <input id="decrypted-key" type="number" /></label></p>
+      <p class="text-message">Decrypted text will be here</p>
+    </div>
+    <div class="encrypted-text">
+      <p class="title">Encrypted Text</p>
+      <textarea class="encrypted-text-input"></textarea>
+      <p class="key"><label>Secret Key: <input id="encrypted-key" type="number" /></label></p>
+      <p class="text-message">Encrypted text will be here</p>
+    </div>
+  </div>
+  <img class="btn-encrypt" src="img/arrow-right.svg" alt="arrow-right">
+  <img class="btn-decrypt" src="img/arrow-left.svg" alt="arrow-left">
+  <img class="btn-change" src="img/arrow-change.svg" alt="arrows">
+</body>
+</html>

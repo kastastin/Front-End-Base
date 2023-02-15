@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 75%;
+  width: 90%;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+}
+
+.text, .encrypted-text {
+  position: relative;
+  border: 2px solid rgba(201,38,201, 0.2);
+  border-radius: 20px;
+
+  -webkit-box-shadow: 0px 0px 37px -8px rgba(201,38,201,0.92);
+  -moz-box-shadow: 0px 0px 37px -8px rgba(201,38,201,0.92);
+  box-shadow: 0px 0px 37px -8px rgba(201,38,201,0.92);
+
+  max-height: 100%;
+  width: 50%;
+  padding: 2%;
+}
+
+.title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-bottom: 5%;
+  max-width: 100%;
+}
+
+.text textarea, .encrypted-text textarea {
+  margin: 0 10%;
+  padding: 3%;
+  width: 80%;
+  height: 80%;
+  resize: none;
+  border: thick double rgb(201,38,201);
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.text-message, .encrypted-text-message {
+  font-size: 16px;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  margin: 0 auto;
+  margin-top: 2%;
+}
+
+.key label {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.key label input {
+  border:0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  outline:0;
+  width: 6%;
+}
+
+.text .key label input::placeholder {
+  text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn-encrypt, .btn-decrypt, .btn-change {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-change {
+  top: 30%;
+}
+
+.btn-encrypt:hover,
+.btn-decrypt:hover,
+.btn-change:hover {
+  border: 2px solid rgb(201,38,201);
+}
+
+.disable {
+  display: none;
+}
