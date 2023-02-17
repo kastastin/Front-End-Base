@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+:root {
+  --primary-color: #5074f3;
+}
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--primary-color);
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 25em;
+}
+
+.card {
+  width: 100%;
+  padding: 4em 0;
+  border-radius: 0.5em;
+  background-color: white;
+  text-align: center;
+}
+
+.card .img-container {
+  height: 10em;
+  width: 10em;
+  margin: -8em auto 0 auto;
+  background-color: var(--primary-color);
+  box-shadow: 0 0 0 .3em white, 0 0 0 .5em white;
+  border-radius: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.container button {
+  display: block;
+  width: 90%;
+  margin: 2em auto 0 auto;
+  padding: 1.1em 0;
+  border: none;
+  border-radius: 0.3em;
+  color: #000341;
+  font-size: 1.2em;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+
+.card h2 {
+  margin: 1.5em 0 1em 0;
+  font-weight: 700;
+}
+
+.card h3 {
+  margin-top: 0.5em;
+  color: gray;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+h3 > img {
+  height: 1.2em;
+  width: 1.2em;
+  margin-right: .2em;
+  transform: translateY(0.2em);
+}
